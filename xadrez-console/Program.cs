@@ -1,10 +1,8 @@
 ﻿// See https://aka.ms/new-console-template for more information
 using tabuleiro;
 
-Posicao P;
+Tabuleiro tab = new Tabuleiro(8, 8);
 
-P = new Posicao(3, 4);
-
-Console.WriteLine("Posição: " + P );
+Console.WriteLine(tab);
 
 Console.ReadLine();
