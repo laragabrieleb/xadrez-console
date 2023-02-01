@@ -1,8 +1,5 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+
 
 namespace tabuleiro
 {
@@ -15,10 +12,16 @@ namespace tabuleiro
 
         public Peca(Posicao posicao, Tabuleiro tab, Cor cor)
         {
-            this.posicao = posicao;
+            this.posicao = null;
             this.tab = tab;
             this.cor = cor;
             this.qtdMovimentos = 0;
+        }
+
+        public Peca(Tabuleiro tab, Cor cor)
+        {
+            this.tab = tab;
+            this.cor = cor;
         }
     }
 }
